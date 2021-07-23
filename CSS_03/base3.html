@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div.Menu1 { width: 100px }
+        div.Menu1 > div { background-color: rgb(185, 185, 185); border: solid rgb(0, 0, 0) 1px; position: relative; cursor: pointer }
+        div.Menu2 { width: 100px; display: none }
+        div.Menu2 > div { background-color: rgb(241, 28, 170); border: solid rgb(0, 0, 0) 1px; cursor: pointer }
+        div.Menu1 > div:hover div.Menu2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1 }
+        @media all and (min-width: 700px){
+            div.Menu1 { width: 700px }
+            div.Menu1 > div:hover div.Menu2 { display: block; position: absolute; left: 0; top: 100%; z-index: 1 }
+            .move {
+                width: 100px;
+                float: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class='Menu1'>
+        <div class="move">
+            Понедельник
+            <div class='Menu2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="move">
+            Вторник
+            <div class='Menu2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="move">
+            Среда
+            <div class='Menu2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="move">
+            Четверг
+            <div class='Menu2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="move">
+            Пятница
+            <div class='Menu2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="move">
+            Суббота
+            <div class='Menu2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div class="move">
+            Воскресенье
+            <div class='Menu2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
